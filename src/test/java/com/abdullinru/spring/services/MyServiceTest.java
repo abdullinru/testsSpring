@@ -79,7 +79,7 @@ class MyServiceTest {
 
         service.addAges(age1, age2);
 
-//        Assertions.assertThat(actual).isEqualTo(sum);
+        Mockito.verify(repo).addAges(age1, age2);
     }
 
     private static Stream<Arguments> source() {
